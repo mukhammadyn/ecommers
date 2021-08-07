@@ -1,0 +1,13 @@
+.site-header__main {
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+@include breakpoint-down (580px) {
+
+  .site-header__main {
+    padding-top: 25px;
+    padding-bottom: 30px;
+  }
+
+}

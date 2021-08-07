@@ -1,0 +1,134 @@
+/* SEARCH MODAL */
+.search-modal {
+  display: none;
+  position: fixed;
+  z-index: 90;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(231, 231, 231, 0.726);
+  -webkit-animation: scale-out-ver-top 0.3s ease-out 0s alternate-reverse both;
+  animation: scale-out-ver-top 0.3s ease-out 0s alternate-reverse both;
+}
+
+.search-modal--open {
+  display: block;
+}
+
+.search-modal__form {
+  @extend .header-main__form;
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.search-modal__selection {
+  @extend .header-main__selection;
+}
+
+.search-modal__search {
+  @extend .header-main__search;
+}
+
+.search-modal__submit {
+  @extend .header-main__submit;
+}
+
+
+@include breakpoint-down (830px) {
+  
+  .search-modal__form {
+    display: flex;
+    align-items: center;
+    width: 80%;
+  }
+
+  .search-modal__search {
+    flex-grow: 1;
+    border: none;
+  }
+
+  .search-modal__submit {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    background-image: url(../img/icon/search-submit.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+
+@include breakpoint-down (600px) {
+
+  .search-modal__search {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #A9A9A9;
+  }
+
+}
+
+@include breakpoint-down (510px) {
+
+  .search-modal__form {
+    flex-direction: column;
+  }
+
+  .search-modal__selection {
+    margin-bottom: 10px;
+  }
+
+  .search-modal__search {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+}
+
+
+/* ANIMATION */
+
+@-webkit-keyframes scale-out-ver-top {
+
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+
+}
+
+@keyframes scale-out-ver-top {
+
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+
+}

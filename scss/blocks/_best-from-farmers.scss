@@ -1,0 +1,21 @@
+.best-from-farmers{
+  padding-right: 45px;
+  padding-left: 45px;
+  width: 100%;
+  padding-bottom: 64px;
+  display: flex;
+  align-items: flex-start;
+}
+
+@include breakpoint-down(1000px){
+  .best-from-farmers{
+    align-items: flex-start;
+  }
+}
+
+@include breakpoint-down(780px){
+  .best-from-farmers{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

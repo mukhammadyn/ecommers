@@ -1,0 +1,15 @@
+.best-selling{
+  width: 100%;
+  padding-right: 45px;
+  padding-left: 45px;
+  padding-bottom: 64px;
+  display: flex;
+  align-items: flex-start;
+}
+
+@include breakpoint-down(780px){
+  .best-selling{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

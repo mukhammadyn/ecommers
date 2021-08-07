@@ -1,0 +1,16 @@
+// SITE HEADER NAV
+.site-header__nav {
+  display: block;
+}
+
+@include breakpoint-down (690px) {
+
+  .site-header__nav {
+    display: none;
+  }
+
+  .site-header__nav--active {
+    display: block;
+  }
+
+}

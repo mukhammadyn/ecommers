@@ -1,0 +1,38 @@
+// GENERAL
+@import "visually-hidden";
+@import "container";
+// HEADER
+@import "site-header";
+@import "header-top";
+@import "site-header__top";
+@import "site-header__main";
+@import "header-main";
+@import "search-modal";
+@import "site-header__nav";
+@import "site-nav";
+// MAIN
+@import "category-menu";
+@import "index-filter";
+@import "cards-group";
+
+@import "best-selling";
+@import "index-products";
+@import "link-buy-now";
+
+@import "slicking-section";
+@import "slicking";
+@import "slick-slider";
+
+@import "best-from-farmers";
+
+@import "section-headline";
+
+@import "category-hero";
+@import "category-header";
+// FOOTER
+@import "site-footer";
+@import "footer-top";
+@import "footer-bottom";
+@import "eat-blog";
+@import "headline";
+@import "blog";

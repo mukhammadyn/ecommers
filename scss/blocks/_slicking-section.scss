@@ -1,0 +1,31 @@
+.slicking-section {
+  padding-top: 69px;
+  padding-bottom: 70px;
+}
+
+.slicking-section__header {
+  @extend .section-headline__header;
+
+  padding-left: 45px;
+  padding-right: 45px; 
+}
+
+.slicking-section__title {
+  @extend .section-headline__title;
+}
+
+.slicking-section__btn {
+  @extend .section-headline__btn;
+}
+
+@include breakpoint-down (1070px) {
+
+  .slicking-section {
+    padding-bottom: 0;
+  }
+
+  .slicking-section__header {
+    padding-bottom: 0 !important;
+  }
+
+}

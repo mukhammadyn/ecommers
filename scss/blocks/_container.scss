@@ -1,0 +1,11 @@
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1260px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
